@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Daily Tuition</title>
+
+<%- include("./partials/head.ejs") %>
+<style>
+
+body,html{
+    height: 100%;
+}
+
+</style>
+
+<body>
+    <div class="loading-container">
+        <div class="loading-screen">
+        </div>
+      </div>
+  
+      <header>
+
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+              </div>
+              <nav class="main-navigation ">
+          <ul class="navbar-links">
+            
+            <li><a class="appear" href="/">about</a></li>
+            <li><a class="appear" href="/tools">tools</li>
+            <li><a class="appear" href="/project">project</a></li>
+            <li><a class="appear" href="/contact">contact</a></li>
+            
+
+            </ul>
+        </nav>
+      </header>
+      <div data-barba="wrapper">
+      <main data-barba="container" data-barba-namespace="home" >
+        <section class="site-banner container-fluid burger" >
+                <div class="row ">
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-6 site-title two-column">
+                        <h3 class="title-text">HI THERE<img class="svg-icons" src="./icons/wave.svg"/>, I'm  </h3>
+                        <h2 class="title-text">kolade</h1>
+                        <h4 class="title-text text-uppercase">SOFTWARE DEVELOPER<img class="svg-icons" src="./icons/boy.svg"/><img class="svg-icons" src="./icons/computer.png"/></h4>
+                        <p> i'm a creative software developer base in Abuja, Nigeria</p>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button secondary-button text-uppercase">Hire Me</button>
+                                <button type="button" class="btn button secondary-button text-uppercase">Grab CV</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 banner-image two-column-img">
+                        <img src="./img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                    </div>
+                </div>
+        </section>
+    </main>
+  </div>
+ 
+
+  <footer class="footer-area">
+    <div class="social text-center">
+        <a href="#"><i class="fab fa-github github"></i></a>
+        <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
+        <a href="#"><i class="fab fa-medium medium"></i></a>
+        <a href="#"><i class="fab fa-twitter twitter"></i></a>
+    </div>
+    <div class="copyrights text-center">
+        <p class="para">
+            Made with Love 
+        </p>
+    </div>
+</footer>
+</main>
+  <%- include("./partials/footer.ejs") %>
+
+</main>
+</body>
+
+</html>
